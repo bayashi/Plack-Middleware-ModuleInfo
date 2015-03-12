@@ -15,6 +15,7 @@ my $builder = Module::Build->new(
         'Test::More' => 0.88,
         'Plack::Builder' => 0,
         'HTTP::Request::Common' => 0,
+        'File::Spec' => 0,
         'Plack::Test' => 0,
     },
     requires => {

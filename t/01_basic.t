@@ -2,6 +2,7 @@ use warnings;
 use strict;
 use Plack::Builder;
 use HTTP::Request::Common;
+use File::Spec;
 use Plack::Test;
 use Test::More;
 
@@ -65,7 +66,8 @@ use Test::More;
         like $res->content, qr{module:};
         like $res->content, qr{name:.*Plack::Middleware::ModuleInfo};
         like $res->content, qr{version:.*$Plack::Middleware::ModuleInfo::VERSION};
-        like $res->content, qr{file:.*Plack/Middleware/ModuleInfo};
+        my $expect = File::Spec->catfile(qw/Plack Middleware ModuleInfo/);
+        like $res->content, qr{file:.*$expect};
 
         note $res->content if $ENV{AUTHOR_TEST};
     };
