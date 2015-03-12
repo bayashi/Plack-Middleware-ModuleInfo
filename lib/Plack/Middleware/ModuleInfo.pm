@@ -6,7 +6,7 @@ use Plack::Util::Accessor qw/ path allow dumper /;
 use Net::CIDR::Lite;
 use Module::Info;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub prepare_app {
     my $self = shift;
@@ -195,7 +195,7 @@ You can customize the result.
 
 =begin html
 
-<a href="http://travis-ci.org/bayashi/Plack-Middleware-ModuleInfo"><img src="https://secure.travis-ci.org/bayashi/Plack-Middleware-ModuleInfo.png?_t=1426033088"/></a> <a href="https://coveralls.io/r/bayashi/Plack-Middleware-ModuleInfo"><img src="https://coveralls.io/repos/bayashi/Plack-Middleware-ModuleInfo/badge.png?_t=1426033088&branch=master"/></a>
+<a href="http://travis-ci.org/bayashi/Plack-Middleware-ModuleInfo"><img src="https://secure.travis-ci.org/bayashi/Plack-Middleware-ModuleInfo.png?_t=1426171167"/></a> <a href="https://coveralls.io/r/bayashi/Plack-Middleware-ModuleInfo"><img src="https://coveralls.io/repos/bayashi/Plack-Middleware-ModuleInfo/badge.png?_t=1426171167&branch=master"/></a>
 
 =end html
 
