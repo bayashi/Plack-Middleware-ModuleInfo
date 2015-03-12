@@ -26,6 +26,7 @@ my $builder = Module::Build->new(
         'Plack::Util::Accessor' => 0,
         'Net::CIDR::Lite' => 0,
         'Module::Info' => 0,
+        'YAML' => 0,
     },
     add_to_cleanup      => [ 'Plack-Middleware-ModuleInfo-*' ],
     meta_merge     => {
