@@ -1,6 +1,7 @@
 Revision history for Perl extension Plack::Middleware::ModuleInfo
 
 0.02    Thu Mar 12 23:38:49 JST 2015
+        - fix pod
         - fix dependency: add YAML
         - fix test for Win32
 

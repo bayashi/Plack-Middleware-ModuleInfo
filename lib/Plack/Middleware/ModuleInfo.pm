@@ -164,14 +164,14 @@ Plack::Middleware::ModuleInfo is the Plack middleware for showing module informa
 
     path => '/module_info',
 
-location that displays server status
+location that displays module information
 
 =head2 allow
 
     allow => '127.0.0.1'
     allow => ['192.168.0.0/16', '10.0.0.0/8']
 
-host based access control of a page of server status. supports IPv6 address.
+host based access control of a page of module information. supports IPv6 address.
 
 =head2 dumper
 
