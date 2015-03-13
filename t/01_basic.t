@@ -66,7 +66,7 @@ use Test::More;
         like $res->content, qr{module:};
         like $res->content, qr{name:.*Plack::Middleware::ModuleInfo};
         like $res->content, qr{version:.*$Plack::Middleware::ModuleInfo::VERSION};
-        my $expect = File::Spec->catfile(qw/Plack Middleware ModuleInfo/);
+        my $expect = quotemeta File::Spec->catfile(qw/Plack Middleware ModuleInfo/);
         like $res->content, qr{file:.*$expect};
 
         note $res->content if $ENV{AUTHOR_TEST};
