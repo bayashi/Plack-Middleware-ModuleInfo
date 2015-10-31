@@ -83,7 +83,7 @@ sub _handle_module_info {
         if ( my $mod = Module::Info->new_from_loaded($input_module) ) {
             $info->{module} = {
                 name    => $mod->name,
-                version => $mod->version,
+                version => eval "\$$input_module\::VERSION" || $mod->version, ## no critic
                 file    => $mod->file,
             };
         }
