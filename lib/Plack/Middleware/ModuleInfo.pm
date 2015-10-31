@@ -44,7 +44,7 @@ sub prepare_app {
     unless ($self->dumper) {
         require YAML;
         $self->dumper(sub{
-            my ($info, $env) = @_;
+            my ($info) = @_;
             return [
                 200,
                 ['Content-Type' => 'text/plain'],
