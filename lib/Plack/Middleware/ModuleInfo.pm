@@ -6,7 +6,7 @@ use Plack::Util::Accessor qw/ path allow dumper /;
 use Net::CIDR::Lite;
 use Module::Info;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub prepare_app {
     my $self = shift;
